@@ -1,10 +1,12 @@
 export default class Calculator {
-  constructor(age) {
+  constructor(age, pastBirthday, futureBirthday) {
     this.earthYears = age;
     this.mercuryYears = 0.24;
     this.venusYears = 0.62;
     this.marsYears = 1.88;
     this.jupiterYears = 11.86;
+    this.pastBirthday = pastBirthday;
+    this.futureBirthday = futureBirthday;
   }
 
   giveMercuryAge() {
