@@ -39,4 +39,9 @@ describe('Calculator', () => {
     expect(newCalc.yearsPast()).toEqual([(35-25)/1, (35-25)/0.24, (35-25)/0.62, (35-25)/1.88, (35-25)/11.86]);
   });
 
+  test('should return an array of planetary years for each planet until a future birthday', () => {
+    const newCalc = new Calculator(35, 25, 60);
+    expect(newCalc.yearsToCome()).toEqual([(60-35)/1, (60-35)/0.24, (60-35)/0.62, (60-35)/1.88, (60-35)/11.86]);
+  });
+
 });
