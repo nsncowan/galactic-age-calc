@@ -19,7 +19,9 @@ export default class Calculator {
     return this.earthYears / this.marsYears;
   }
 
-
+  giveJupiterAge() {
+    return this.earthYears / this.jupiterYears;
+  }
 
 
 }
