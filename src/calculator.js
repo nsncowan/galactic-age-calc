@@ -7,6 +7,9 @@ export default class Calculator {
     this.jupiterYears = age/11.86;
   }
 
+  giveMercuryAge() {
+    return this.mercuryYears;
+  }
  
 
 
