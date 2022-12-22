@@ -33,6 +33,13 @@ export default class Calculator {
     return yearsPastArray;
   }
 
-  
+  yearsToCome() {
+    const yearsToComeGap = this.futureBirthday - this.age;
+
+    const yearsToComeArray = [yearsToComeGap/this.earthYears, yearsToComeGap/this.mercuryYears, yearsToComeGap/this.venusYears, yearsToComeGap/this.marsYears, yearsToComeGap/this.jupiterYears];
+
+    return yearsToComeArray;
+
+}
 
 }
