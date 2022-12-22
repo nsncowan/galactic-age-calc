@@ -15,19 +15,22 @@ describe('Calculator', () => {
   test('should convert an age of 35 earth years to mercury (35 / 0.24)', () => {
     const newCalc = new Calculator(35);
     expect(newCalc.giveMercuryAge()).toEqual(35 / 0.24);
-  })
+  });
 
   test('should convert an age of 35 earth years to venus (35 / 0.62)', () => {
     const newCalc = new Calculator(35);
     expect(newCalc.giveVenusAge()).toEqual(35 / 0.62);
-  })
+  });
 
   test('should convert an age of 35 earth years to mars (35 / 1.88)', () => {
     const newCalc = new Calculator(35);
     expect(newCalc.giveMarsAge()).toEqual(35 / 1.88);
-  })
+  });
 
-
+  test('should convert an age of 35 earth years to jupiter (35 / 11.86)', () => {
+    const newCalc = new Calculator(35);
+    expect(newCalc.giveJupiterAge()).toEqual(35 / 11.86);
+  });
 
 
 });
