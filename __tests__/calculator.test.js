@@ -12,7 +12,11 @@ describe('Calculator', () => {
     expect(calculator.jupiterYears).toEqual(11.86);
   });
 
-
-
+  test('should convert inputted age into mercury years')
+    const mercuryCalc = new Calculator();
+    const input = 35;
+    const planet = 'mercury';
+    Calculator.giveAge(planet, input);
+    expect(mercuryCalc.giveAge('mercury', 35)).toEqual(145.83);
 
 });
