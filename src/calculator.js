@@ -11,6 +11,9 @@ export default class Calculator {
     return this.mercuryYears;
   }
  
+  giveVenusAge() {
+    return this.venusYears;
+  }
 
 
 

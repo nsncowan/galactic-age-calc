@@ -17,4 +17,13 @@ describe('Calculator', () => {
     expect(newCalc.giveMercuryAge()).toEqual(35/0.24);
   })
 
+  test('should return an age of 35 earth years to venus (35/.0.62)', () => {
+    const newCalc = new Calculator(35);
+    expect(newCalc.giveVenusAge()).toEqual(35/0.62);
+  })
+
+
+
+
+
 });
