@@ -17,7 +17,10 @@
 
 * Clone the repository to your desktop.
 * Navigate to the project's top directory in your terminal.
-* Open the directory in your text editor to view the code.
+* enter [npm install] to install all dependencies
+* to generate a bundled package of the project, enter [npm run build]
+* to set up a development server, enter [npm run start]
+* Tests for this project were constructed using Jest, to run further tests, enter [npm test]
 
 ## Known Bugs
 
