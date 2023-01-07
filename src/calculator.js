@@ -11,41 +11,21 @@ export default class Calculator {
   }
 
   convertEarthYears() {
-    const yearConversion = [this.age/this.earthYears, this.age/this.mercuryYears, this.age/this.venusYears, this.age/this.marsYears, this.age/this.jupiterYears];
+    const yearConversion = [`Earth Years: ${this.age/this.earthYears}`, `Mercury Years: ${this.age/this.mercuryYears}`, `Venus Years: ${this.age/this.venusYears}`, `Mars Years: ${this.age/this.marsYears}`, `Jupiter Years: ${this.age/this.jupiterYears}`];
     return yearConversion;
   }
 
-  // giveMercuryAge() {
-  //   return this.age / this.mercuryYears;
-  // }
- 
-  // giveVenusAge() {
-  //   return this.age / this.venusYears;
-  // }
-
-  // giveMarsAge() {
-  //   return this.age / this.marsYears;
-  // }
-
-  // giveJupiterAge() {
-  //   return this.age / this.jupiterYears;
-  // }
 
   yearsPast() {
     const yearsPastGap = this.age - this.pastBirthday;
-    const yearsPastArray = [yearsPastGap/this.earthYears, yearsPastGap/this.mercuryYears, yearsPastGap/this.venusYears, yearsPastGap/this.marsYears, yearsPastGap/this.jupiterYears];
-
+    const yearsPastArray = [`Earth Years: ${yearsPastGap/this.earthYears}`, `Mercury Years: ${yearsPastGap/this.mercuryYears}`, `Venus Years: ${yearsPastGap/this.venusYears}`, `Mars Years: ${yearsPastGap/this.marsYears}`, `Jupiter Years: ${yearsPastGap/this.jupiterYears}`];
     return yearsPastArray;
   }
 
   yearsToCome() {
     const yearsToComeGap = this.futureBirthday - this.age;
-
-    const yearsToComeArray = [yearsToComeGap/this.earthYears, yearsToComeGap/this.mercuryYears, yearsToComeGap/this.venusYears, yearsToComeGap/this.marsYears, yearsToComeGap/this.jupiterYears];
-
+    const yearsToComeArray = [`Earth Years: ${yearsToComeGap/this.earthYears}`, `Mercury Years: ${yearsToComeGap/this.mercuryYears}`, `Venus Years: ${yearsToComeGap/this.venusYears}`, `Mars Years: ${yearsToComeGap/this.marsYears}`, `Jupiter Years: ${yearsToComeGap/this.jupiterYears}`];
     return yearsToComeArray;
-
-    
-}
+  }
 
 }
