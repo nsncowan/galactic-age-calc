@@ -14,25 +14,10 @@ describe('Calculator', () => {
     expect(calculator.futureBirthday).toEqual(65);
   });
 
-  test('should convert an age of 35 earth years to mercury years (35 / 0.24)', () => {
-    const newCalc = new Calculator(35);
-    expect(newCalc.giveMercuryAge()).toEqual(35 / 0.24);
-  });
-
-  test('should convert an age of 35 earth years to venus years (35 / 0.62)', () => {
-    const newCalc = new Calculator(35);
-    expect(newCalc.giveVenusAge()).toEqual(35 / 0.62);
-  });
-
-  test('should convert an age of 35 earth years to mars years (35 / 1.88)', () => {
-    const newCalc = new Calculator(35);
-    expect(newCalc.giveMarsAge()).toEqual(35 / 1.88);
-  });
-
-  test('should convert an age of 35 earth years to jupiter years (35 / 11.86)', () => {
-    const newCalc = new Calculator(35);
-    expect(newCalc.giveJupiterAge()).toEqual(35 / 11.86);
-  });
+  test('should return an array of inputted age converted into planetary years', () => {
+    const newCalc = new Calculator(35, 25, 60);
+    expect(newCalc.convertEarthYears()).toEqual([35/1, 35/0.24, 35/0.62, 35/1.88, 35/11.86])
+  })
 
   test('should return an array of planetary years for each planet since past birthday', () => {
     const newCalc = new Calculator(35, 25, 60);
@@ -43,5 +28,5 @@ describe('Calculator', () => {
     const newCalc = new Calculator(35, 25, 60);
     expect(newCalc.yearsToCome()).toEqual([(60-35)/1, (60-35)/0.24, (60-35)/0.62, (60-35)/1.88, (60-35)/11.86]);
   });
-
+  
 });

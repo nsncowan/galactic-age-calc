@@ -10,21 +10,26 @@ export default class Calculator {
     this.futureBirthday = futureBirthday;
   }
 
-  giveMercuryAge() {
-    return this.age / this.mercuryYears;
+  convertEarthYears() {
+    const yearConversion = [this.age/this.earthYears, this.age/this.mercuryYears, this.age/this.venusYears, this.age/this.marsYears, this.age/this.jupiterYears];
+    return yearConversion;
   }
+
+  // giveMercuryAge() {
+  //   return this.age / this.mercuryYears;
+  // }
  
-  giveVenusAge() {
-    return this.age / this.venusYears;
-  }
+  // giveVenusAge() {
+  //   return this.age / this.venusYears;
+  // }
 
-  giveMarsAge() {
-    return this.age / this.marsYears;
-  }
+  // giveMarsAge() {
+  //   return this.age / this.marsYears;
+  // }
 
-  giveJupiterAge() {
-    return this.age / this.jupiterYears;
-  }
+  // giveJupiterAge() {
+  //   return this.age / this.jupiterYears;
+  // }
 
   yearsPast() {
     const yearsPastGap = this.age - this.pastBirthday;
@@ -40,6 +45,7 @@ export default class Calculator {
 
     return yearsToComeArray;
 
+    
 }
 
 }
