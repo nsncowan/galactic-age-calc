@@ -10,6 +10,8 @@
 * _Jest_
 * _Webpack_
 * _Node Package Manager_
+* _html_
+
 
 ## This is a calculator tool designed to demonstrate my understanding of test-driven development using Jest. 
 
